@@ -1,0 +1,36 @@
+
+#include "pch.h"
+#include <iostream>
+#include <cmath>  
+using namespace std;
+int main()
+{
+	float x, a, b, c, one, two, three;
+	printf("Enter x: ");
+	scanf_s("%f", &x);
+
+	printf("Enter a: ");
+	scanf_s("%f", &a);
+
+	printf("Enter b: ");
+	scanf_s("%f", &b);
+
+	printf("Enter c: ");
+	scanf_s("%f", &c);
+
+	one = -a * pow(x, 2) - b;
+	two = (x - a) / x;
+	three = -x / c;
+
+
+	if (x > 5)
+		if (c = 0) printf("Result is %f \n", two);
+		else printf("Result is %f \n", three);
+	if (x <= 5)
+		if (c == 0) printf("Error \n");
+		else printf("Result is %f \n", one);
+
+
+	system("pause");
+	return 0;
+}
